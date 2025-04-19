@@ -30,7 +30,7 @@ jobs:
 
       - name: 下载 BPB worker.js
         run: |
-          wget -O origin.js https://github.com/cmliu/edgetunnel/blob/main/%E6%98%8E%E6%96%87%E6%BA%90%E7%A0%81.js
+          wget -O origin.js https://github.com/cmliu/edgetunnel/blob/main/_worker.js
       - name: 混淆 BPB worker.js
         run: |
           javascript-obfuscator origin.js --output _worker.js \
